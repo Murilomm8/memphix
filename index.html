@@ -99,6 +99,12 @@ nav a:hover{
 color:#d4af37;
 }
 
+.contact-link{
+color:#d4af37;
+text-decoration:none;
+font-weight:600;
+}
+
 /* HERO */
 
 .hero{
@@ -137,6 +143,9 @@ border:none;
 font-weight:600;
 cursor:pointer;
 transition:0.4s;
+text-decoration:none;
+display:inline-block;
+color:#050505;
 }
 
 .btn-primary{
@@ -275,27 +284,19 @@ font-size:40px;
 margin-bottom:20px;
 }
 
-/* NEWSLETTER */
-
-.newsletter{
-text-align:center;
-margin-top:80px;
+.contact-box{
+margin-top:26px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
-.newsletter input{
-padding:14px;
-border-radius:6px;
-border:none;
-width:260px;
-margin-right:10px;
-}
-
-.newsletter button{
-padding:14px 26px;
-border:none;
-background:#d4af37;
-border-radius:6px;
-cursor:pointer;
+.contact-item{
+padding:14px 18px;
+border:1px solid rgba(255,255,255,0.14);
+border-radius:10px;
+background:rgba(255,255,255,0.02);
 }
 
 /* FOOTER */
@@ -361,9 +362,8 @@ display:none;
 
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">Sobre</a></li>
-<li><a href="#">Serviços</a></li>
-<li><a href="#">Contato</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#contato">Contato</a></li>
 </ul>
 
 </nav>
@@ -378,8 +378,8 @@ A Memphix estrutura operações completas para vendedores que precisam crescer c
 
 <div class="buttons">
 
-<button class="btn btn-primary">Falar com especialista</button>
-<button class="btn btn-secondary">Conhecer serviços</button>
+<a class="btn btn-primary" href="https://wa.me/5511940279643?text=Ol%C3%A1%2C%20quero%20realizar%20uma%20consulta%20para%20o%20projeto.">Falar com especialista</a>
+<a class="btn btn-secondary" href="#servicos">Conhecer serviços</a>
 
 </div>
 
@@ -409,7 +409,7 @@ A Memphix estrutura operações completas para vendedores que precisam crescer c
 
 </section>
 
-<section class="section">
+<section class="section" id="servicos">
 
 <h2 class="section-title">Estrutura completa para escalar marketplaces</h2>
 
@@ -455,13 +455,15 @@ A Memphix estrutura operações completas para vendedores que precisam crescer c
 
 <div class="logos">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mercado_Livre_wordmark_%28Portuguese_version%29.svg/640px-Mercado_Livre_wordmark_%28Portuguese_version%29.svg.png">
+<img alt="Mercado Livre" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mercado_Livre_wordmark_%28Portuguese_version%29.svg/640px-Mercado_Livre_wordmark_%28Portuguese_version%29.svg.png">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+<img alt="Amazon" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg">
+<img alt="Shopee" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Magalu_%282019%29.svg/640px-Magalu_%282019%29.svg.png">
+<img alt="Magalu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Magalu_%282019%29.svg/640px-Magalu_%282019%29.svg.png">
+
+<img alt="TikTok Shop" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg">
 
 </div>
 
@@ -471,23 +473,22 @@ A Memphix estrutura operações completas para vendedores que precisam crescer c
 
 <h2>Pronto para escalar seu ecommerce?</h2>
 
-<p>Converse com especialistas da Memphix.</p>
+<p>Converse com especialistas da Memphix pelo WhatsApp ou por email.</p>
 
 <br><br>
 
-<button class="btn btn-primary">Entrar em contato</button>
+<a class="btn btn-primary" href="https://wa.me/5511940279643?text=Ol%C3%A1%2C%20quero%20realizar%20uma%20consulta%20para%20o%20projeto.">Entrar em contato</a>
 
-</section>
-
-<section class="newsletter">
-
-<h2>Newsletter</h2>
-
-<br>
-
-<input type="email" placeholder="Digite seu email">
-
-<button>Inscrever</button>
+<div class="contact-box" id="contato">
+<div class="contact-item">
+WhatsApp:
+<a class="contact-link" href="https://wa.me/5511940279643?text=Ol%C3%A1%2C%20quero%20realizar%20uma%20consulta%20para%20o%20projeto.">+55 11 94027-9643</a>
+</div>
+<div class="contact-item">
+Email:
+<a class="contact-link" href="mailto:gerentememphix@gmail.com?subject=Consulta%20de%20projeto%20Memphix&body=Ol%C3%A1%2C%20quero%20realizar%20uma%20consulta%20para%20o%20projeto.">gerentememphix@gmail.com</a>
+</div>
+</div>
 
 </section>
 
@@ -497,7 +498,7 @@ Copyright © 2026 Memphix
 
 </footer>
 
-<a href="#" class="whatsapp">💬</a>
+<a href="https://wa.me/5511940279643?text=Ol%C3%A1%2C%20quero%20realizar%20uma%20consulta%20para%20o%20projeto." class="whatsapp" aria-label="Falar no WhatsApp">💬</a>
 
 <script>
 
